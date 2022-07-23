@@ -20,6 +20,44 @@
 
     <h1>TABLE</h1>
 
+    <table>
+    <thead>
+
+      <tr>
+        <th colspan="4">Scores by quarter</th>
+      </tr>
+
+      <tr>
+        <th rowspan="2">Team Name</th>
+        <th colspan="2">First Half</th>
+        <th colspan="2">Second Half</th>
+      </tr>
+    </thead>
+    <thead>
+      <th></th>
+      <th>Q1</th>
+      <th>Q2</th>
+      <th>Q3</th>
+      <th>Q4</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Steelers</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Patriots</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+  </table>
+
     <h1>LIST</h1>
 
       <ul>
@@ -45,8 +83,68 @@
                 <li>Brian Hoyer</li>
               </ol>
       </ul>
-      
-    <h1>FORM</h1>
+
+  <h1>FORM</h1>
+    <form class="" action="" method="post">
+
+      <section class="name">
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" for="firstName">
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" for="lastName">
+      </section>
+      <br>
+
+      <section class="favoriteSport">
+        <label for="favoriteSport">Favorite Sport:</label>
+        <select id="favoriteSport" name="favoriteSport">
+          <option value=""></option>
+          <option value="football">Football</option>
+          <option value="baseball">Baseball</option>
+          <option value="basketball">Basketball</option>
+          <option value="soccer">Soccer</option>
+        </select>
+      </section>
+      <br>
+
+      <section class="exp">
+        <span>I have: </span>
+
+        <input type="checkbox" name="exp" id="exp" value="attended">
+        <label for="exp">Attended</label>
+
+        <input type="checkbox" name="exp" id="exp" value="played">
+        <label for="exp">Played</label>
+
+        <input type="checkbox" name="exp" id="exp" value="coached">
+        <label for="exp">Coached</label>
+
+        <input type="checkbox" name="exp" id="exp" value="betOn">
+        <label for="exp">Bet on</label>
+        <br>
+
+        <span>this sport.</span>
+      </section>
+      <br>
+
+      <section class="league">
+        <span>For this sport I prefer: </span>
+
+        <input type="radio" name="league" id="league" value="nfl">
+        <label for="">NFL</label>
+
+        <input type="radio" name="league" id="league" value="xfl">
+        <label for="">XFL</label>
+
+        <input type="radio" name="league" id="league" value="college">
+        <label for="">College</label>
+    </section>
+    <br>
+
+    <input type="submit">
+
+    </form>
 
   </body>
 </html>
